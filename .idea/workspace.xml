@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d17459d-df6f-45c0-af9f-ed3ea0db2179" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataExploration.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/DataExploration.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrape_results.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrape_results.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrape_results.py" beforeDir="false" afterPath="$PROJECT_DIR$/scraper.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="scrape_results.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scrape_results.py">
+      <file leaf-file-name="scraper.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scraper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+            <state relative-caret-position="435">
+              <caret line="29" column="60" selection-start-line="29" selection-start-column="53" selection-end-line="29" selection-end-column="60" />
               <folding>
                 <element signature="e#40#69#0" expanded="true" />
               </folding>
@@ -37,6 +36,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/scrape_results.py" />
+        <option value="$PROJECT_DIR$/scraper.py" />
       </list>
     </option>
   </component>
@@ -103,10 +103,10 @@
       <window_info anchor="right" id="R Graphics" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" visible="true" weight="0.32979977" />
-      <window_info anchor="bottom" id="Python Console" />
+      <window_info anchor="bottom" id="Version Control" weight="0.32979977" />
+      <window_info anchor="bottom" id="Python Console" weight="0.32979977" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32979977" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -148,10 +148,10 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scrape_results.py">
+    <entry file="file://$PROJECT_DIR$/scraper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="435">
+          <caret line="29" column="60" selection-start-line="29" selection-start-column="53" selection-end-line="29" selection-end-column="60" />
           <folding>
             <element signature="e#40#69#0" expanded="true" />
           </folding>
