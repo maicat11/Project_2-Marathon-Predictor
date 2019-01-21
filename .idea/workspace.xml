@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="7d17459d-df6f-45c0-af9f-ed3ea0db2179" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/DataExploration.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/DataExploration.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/BM_RaceResults2018.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/scraper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/marathon_results_2018.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/marathon_results_2018.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_response.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/supplement_2018.csv" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,8 +19,8 @@
       <file leaf-file-name="scraper.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scraper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="165" column="52" selection-start-line="165" selection-start-column="52" selection-end-line="165" selection-end-column="52" />
+            <state relative-caret-position="75">
+              <caret line="5" selection-start-line="5" selection-end-line="29" selection-end-column="13" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -41,9 +42,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1650" />
-    <option name="height" value="969" />
+    <option name="x" value="-417" />
+    <option name="y" value="-1417" />
+    <option name="width" value="1405" />
+    <option name="height" value="1416" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -99,10 +101,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1650" height="969" extended-state="0" />
+    <frame x="-417" y="-1417" width="1405" height="1416" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29493764" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="R Packages" />
       <window_info anchor="right" id="R Graphics" />
@@ -111,7 +113,7 @@
       <window_info anchor="bottom" id="Version Control" weight="0.32979977" />
       <window_info anchor="bottom" id="Python Console" weight="0.32979977" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32979977" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.21604939" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -155,8 +157,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/scraper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="165" column="52" selection-start-line="165" selection-start-column="52" selection-end-line="165" selection-end-column="52" />
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="29" selection-end-column="13" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
