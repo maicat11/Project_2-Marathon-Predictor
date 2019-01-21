@@ -1,4 +1,3 @@
-# import pandas as pd
 from bs4 import BeautifulSoup
 from selenium import webdriver
 import time
@@ -34,7 +33,7 @@ data_storage = {'Bib': [],
 def page_driver(url):
     '''Creates a Chrome driver and gets the html from the provided URL.
     Returns the driver and the html of the page. Particular to site:
-    http://registration.baa.org/2018/cf/Public/iframe_ResultsSearch.cfm'''
+    http://registration.baa.org/2018/cf/Public/iframe_ResultsSearch.cfm?mode=entry'''
 
     driver = webdriver.Chrome()
     driver.get(url)
@@ -163,49 +162,32 @@ def scrape_by_state(states, divisions):
     max_limit = 1000
 
     for state in states:
-        if state in ['Massachusetts', 'California', 'New York', 'Texas']:
-            for division in divisions:
-                division_option = driver.find_element_by_name("AwardsDivisionID")
-                division_option.send_keys(division)
+        for division in divisions:
+            # populate the provided drop down fields
+            division_option = driver.find_element_by_name("AwardsDivisionID")
+            division_option.send_keys(division)
+            state_option = driver.find_element_by_name("StateID")
+            state_option.send_keys(state)
+            limit = driver.find_element_by_name("VarTargetCount")
+            limit.send_keys(max_limit)
 
-        state_option = driver.find_element_by_name("StateID")
-        state_option.send_keys(state)
-
-        limit = driver.find_element_by_name("VarTargetCount")
-        limit.send_keys(max_limit)
-
-        try:
-            xpath1 = '//*[@id="PublicSearch"]/div/div/input'
-            submit_button = driver.find_elements_by_xpath(xpath1)[0]
-            time.sleep(3)
-            submit_button.click()
-            scrape_results(driver.page_source)
-        except IndexError:
-            xpath4 = '/html/body/div/div/div/div/table[2]/tbody/tr/td[1]/form/input'
-            search_again = driver.find_elements_by_xpath(xpath4)[0]
-            time.sleep(3)
-            search_again.click()
-            continue
-
-        try:
-            xpath2 = ('/html/body/div/div/div/div/table[4]/tbody/tr/td/'
-                      'table/tbody/tr[51]/td/table/tbody/tr/td[2]/form/input[2]')
-            next_button = driver.find_elements_by_xpath(xpath2)[0]
-            time.sleep(3)
-            next_button.click()
-            scrape_results(driver.page_source)
-        except IndexError:
-            xpath4 = '/html/body/div/div/div/div/table[2]/tbody/tr/td[1]/form/input'
-            search_again = driver.find_elements_by_xpath(xpath4)[0]
-            time.sleep(3)
-            search_again.click()
-            continue
-
-        xpath3 = ('/html/body/div/div/div/div/table[3]/tbody/tr/td/table/tbody'
-                  '/tr[51]/td/table/tbody/tr/td[2]/form/input[2]')
-        while True:
             try:
-                next_button = driver.find_elements_by_xpath(xpath3)[0]
+                xpath1 = '//*[@id="PublicSearch"]/div/div/input'
+                submit_button = driver.find_elements_by_xpath(xpath1)[0]
+                time.sleep(3)
+                submit_button.click()
+                scrape_results(driver.page_source)
+            except IndexError:
+                xpath4 = '/html/body/div/div/div/div/table[2]/tbody/tr/td[1]/form/input'
+                search_again = driver.find_elements_by_xpath(xpath4)[0]
+                time.sleep(3)
+                search_again.click()
+                continue
+
+            try:
+                xpath2 = ('/html/body/div/div/div/div/table[4]/tbody/tr/td/'
+                          'table/tbody/tr[51]/td/table/tbody/tr/td[2]/form/input[2]')
+                next_button = driver.find_elements_by_xpath(xpath2)[0]
                 time.sleep(3)
                 next_button.click()
                 scrape_results(driver.page_source)
@@ -214,7 +196,19 @@ def scrape_by_state(states, divisions):
                 search_again = driver.find_elements_by_xpath(xpath4)[0]
                 time.sleep(3)
                 search_again.click()
-                break
+                continue
 
-
-
+            xpath3 = ('/html/body/div/div/div/div/table[3]/tbody/tr/td/table/tbody'
+                      '/tr[51]/td/table/tbody/tr/td[2]/form/input[2]')
+            while True:
+                try:
+                    next_button = driver.find_elements_by_xpath(xpath3)[0]
+                    time.sleep(3)
+                    next_button.click()
+                    scrape_results(driver.page_source)
+                except IndexError:
+                    xpath4 = '/html/body/div/div/div/div/table[2]/tbody/tr/td[1]/form/input'
+                    search_again = driver.find_elements_by_xpath(xpath4)[0]
+                    time.sleep(3)
+                    search_again.click()
+                    break
