@@ -28,7 +28,37 @@ def race_slope(row):
     return best_fit_slope(x, y)
 
 
-def clean_data(df):
+def add_weather_data(df, year):
+    '''Add the weather data for the corresponding year.'''
+
+    year = int(year)
+    median = df['Official Time'].median() / 3600
+
+    pre_median_2015 = {'temp': 48, 'dew_point': 39, 'humidity': 0.71, 'wind': 17, 'gusts': 26}
+    post_median_2015 = {'temp': 44, 'dew_point': 41, 'humidity': 0.89, 'wind': 16, 'gusts': 0}
+    pre_median_2016 = {'temp': 64, 'dew_point': 31, 'humidity': 0.29, 'wind': 14, 'gusts': 22}
+    post_median_2016 = {'temp': 53, 'dew_point': 37, 'humidity': 0.55, 'wind': 14, 'gusts': 0}
+    pre_median_2017 = {'temp': 74, 'dew_point': 40, 'humidity': 0.29, 'wind': 21, 'gusts': 29}
+    post_median_2017 = {'temp': 73, 'dew_point': 34, 'humidity': 0.24, 'wind': 22, 'gusts': 28}
+    pre_median_2018 = {'temp': 45, 'dew_point': 43, 'humidity': 0.93, 'wind': 14, 'gusts': 23}
+    post_median_2018 = {'temp': 44, 'dew_point': 44, 'humidity': 1.00, 'wind': 17, 'gusts': 0}
+
+    new_cols = ['temp', 'dew_point', 'humidity', 'wind', 'gusts']
+
+    for col in new_cols:
+        if year == 2015:
+            df[col] = [pre_median_2015[col] if x < median else post_median_2015[col] for x in df['Official Time']]
+        elif year == 2016:
+            df[col] = [pre_median_2016[col] if x < median else post_median_2016[col] for x in df['Official Time']]
+        elif year == 2017:
+            df[col] = [pre_median_2017[col] if x < median else post_median_2017[col] for x in df['Official Time']]
+        else:
+            df[col] = [pre_median_2018[col] if x < median else post_median_2018[col] for x in df['Official Time']]
+
+    return df
+
+
+def clean_data(df, year):
     '''Takes in a DataFrame, drops unnecessary columns, and applies seconds_converter. '''
 
     # drop unnecessary columns
@@ -36,26 +66,26 @@ def clean_data(df):
     df.drop(['Citizen', 'Proj. Time', 'City'], axis=1, inplace=True)
 
     # rename columns for clarity
-    df18.rename(columns={'Overall': 'overall_rank', 'Gender': 'gender_rank',
-                         'Division': 'division_rank', 'M/F': 'Gender'}, inplace=True)
+    df.rename(columns={'Overall': 'overall_rank', 'Gender': 'gender_rank',
+                       'Division': 'division_rank', 'M/F': 'Gender'}, inplace=True)
 
     # convert the time to seconds on these columns
     time_cols = ['5K', '10K', '15K', '20K', 'Half', '25K',
                  '30K', '35K', '40K', 'Pace', 'Official Time']
     for col in time_cols:
-        df18[col] = df18[col].apply(seconds_converter)
+        df[col] = df[col].apply(seconds_converter)
 
     # fill the State column with NaNs to 'none' instead so it can be
     # concatenated with the country column
-    df18['State'].fillna('', inplace=True)
-    df18['state_country'] = df18['State'] + '_' + df18['Country']
+    df['State'].fillna('', inplace=True)
+    df['state_country'] = df['State'] + '_' + df['Country']
 
     # create a new column progression_slope
-    df18['progression_slope'] = df18.apply(race_slope, axis=1)
+    df['progression_slope'] = df.apply(race_slope, axis=1)
+
+    df = add_weather_data(df, year)
 
     df.drop(['State', 'Country', '5K', '10K', '15K', '20K', '25K',
              '30K', '35K', '40K'], axis=1, inplace=True)
 
     return df
-
-
