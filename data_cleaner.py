@@ -26,8 +26,8 @@ def best_fit_slope(x, y):
 
 def race_slope(row):
     '''Create a new column of the race progression slope.'''
-    nK_splits = ['5K', '10K', '15K', '20K', '25K', '30K', '35K', '40K']
-    x = np.array([5, 10, 15, 20, 25, 30, 35, 40])
+    nK_splits = ['5K', '10K', '15K', '20K', 'Half', '25K', '30K', '35K', '40K']
+    x = np.array([5, 10, 15, 20, 21.1, 25, 30, 35, 40])
     y = np.array([row['5K']] + list(np.diff(row[nK_splits])))
 
     return best_fit_slope(x, y)
@@ -90,11 +90,15 @@ def clean_data(df, year):
     # create a new column progression_slope
     df['progression_slope'] = df.apply(race_slope, axis=1)
 
+    # add weather data
     df = add_weather_data(df, year)
+
+    # make gender binary
+    df = pd.get_dummies(df, columns=['Gender'], drop_first=True)
 
     # drop unnecessary columns
     df.drop(['Citizen', 'City', 'State', 'Country', '5K', '10K', '15K', '20K',
-             '25K', '30K', '35K', '40K', 'Pace'], axis=1, inplace=True)
+             '25K', '30K', '35K', '40K', 'Pace', 'Half'], axis=1, inplace=True)
     df.drop(list(df.filter(regex='Unnamed')), axis=1, inplace=True)
     df.drop(list(df.filter(regex='Proj')), axis=1, inplace=True)
 
