@@ -17,8 +17,8 @@
       <file leaf-file-name="scraper.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scraper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="184" column="24" lean-forward="true" selection-start-line="184" selection-start-column="24" selection-end-line="184" selection-end-column="24" />
+            <state relative-caret-position="315">
+              <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -29,8 +29,8 @@
       <file leaf-file-name="data_cleaner.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data_cleaner.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="879">
-              <caret line="91" selection-start-line="91" selection-end-line="91" />
+            <state relative-caret-position="417">
+              <caret line="96" column="13" lean-forward="true" selection-start-line="96" selection-start-column="13" selection-end-line="96" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -50,10 +50,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-417" />
-    <option name="y" value="-1417" />
-    <option name="width" value="1405" />
-    <option name="height" value="1416" />
+    <option name="y" value="23" />
+    <option name="width" value="1427" />
+    <option name="height" value="969" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -104,9 +103,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-417" y="-1417" width="1405" height="1416" extended-state="0" />
+    <frame x="0" y="23" width="1427" height="969" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29493764" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29025272" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="R Packages" />
       <window_info anchor="right" id="R Graphics" />
@@ -115,7 +115,7 @@
       <window_info anchor="bottom" id="Version Control" weight="0.32979977" />
       <window_info anchor="bottom" id="Python Console" weight="0.32979977" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.21604939" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32979977" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -159,8 +159,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/scraper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="184" column="24" lean-forward="true" selection-start-line="184" selection-start-column="24" selection-end-line="184" selection-end-column="24" />
+        <state relative-caret-position="315">
+          <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
@@ -169,8 +169,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data_cleaner.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="879">
-          <caret line="91" selection-start-line="91" selection-end-line="91" />
+        <state relative-caret-position="417">
+          <caret line="96" column="13" lean-forward="true" selection-start-line="96" selection-start-column="13" selection-end-line="96" selection-end-column="13" />
         </state>
       </provider>
     </entry>

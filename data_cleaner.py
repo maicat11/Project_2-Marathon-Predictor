@@ -1,9 +1,14 @@
 import numpy as np
 
 
+def clean_bib(bib):
+    '''Strip the bib number and make an int'''
+    return int(bib.strip('F'))
+
+
 def seconds_converter(time):
     '''Takes a time in the string form '00:00:00' and converts it into integer
-    of seconds.  Handles special '-' cases and converts them to NaNs '''
+    of seconds.  Handles special '-' cases and converts them to NaN '''
 
     if time == '-':
         return np.nan
@@ -61,9 +66,11 @@ def add_weather_data(df, year):
 def clean_data(df, year):
     '''Takes in a DataFrame, drops unnecessary columns, and applies seconds_converter. '''
 
-    # drop unnecessary columns
-    df.drop(list(df.filter(regex='Unnamed')), axis=1, inplace=True)
-    df.drop(['Citizen', 'Proj. Time', 'City'], axis=1, inplace=True)
+    # drop duplicates bib as they should be unique
+    df.drop_duplicates('Bib', inplace=True)
+
+    # clean the bib value convert to int
+    df['Bib'] = df['Bib'].apply(clean_bib)
 
     # rename columns for clarity
     df.rename(columns={'Overall': 'overall_rank', 'Gender': 'gender_rank',
@@ -71,7 +78,7 @@ def clean_data(df, year):
 
     # convert the time to seconds on these columns
     time_cols = ['5K', '10K', '15K', '20K', 'Half', '25K',
-                 '30K', '35K', '40K', 'Pace', 'Official Time']
+                 '30K', '35K', '40K', 'Official Time']
     for col in time_cols:
         df[col] = df[col].apply(seconds_converter)
 
@@ -85,7 +92,10 @@ def clean_data(df, year):
 
     df = add_weather_data(df, year)
 
-    df.drop(['State', 'Country', '5K', '10K', '15K', '20K', '25K',
-             '30K', '35K', '40K'], axis=1, inplace=True)
+    # drop unnecessary columns
+    df.drop(['Citizen', 'City', 'State', 'Country', '5K', '10K', '15K', '20K',
+             '25K', '30K', '35K', '40K', 'Pace'], axis=1, inplace=True)
+    df.drop(list(df.filter(regex='Unnamed')), axis=1, inplace=True)
+    df.drop(list(df.filter(regex='Proj')), axis=1, inplace=True)
 
     return df
