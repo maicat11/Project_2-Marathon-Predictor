@@ -29,8 +29,8 @@
       <file leaf-file-name="data_cleaner.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data_cleaner.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="198" column="37" selection-start-line="198" selection-start-column="37" selection-end-line="198" selection-end-column="37" />
+            <state relative-caret-position="492">
+              <caret line="240" lean-forward="true" selection-start-line="240" selection-end-line="240" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -172,8 +172,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data_cleaner.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="198" column="37" selection-start-line="198" selection-start-column="37" selection-end-line="198" selection-end-column="37" />
+        <state relative-caret-position="492">
+          <caret line="240" lean-forward="true" selection-start-line="240" selection-end-line="240" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>

@@ -59,7 +59,7 @@ def race_slope(row):
 def race_slope_alternative(row):
     '''Create a new column of the race progression slope.'''
 
-    if np.isnan(row['pace_slope']):
+    if np.isnan(row['race_rate']):
         half_splits = ['Half', 'finish_time']
         x = np.array([21.1, 42.2])
         y = np.array([row['Half']] + list(np.diff(row[half_splits])))
@@ -156,6 +156,22 @@ def rank_ratio(df):
                                    max10=division10_max)
     return df
 
+# MAD outlier function
+# http://eurekastatistics.com/using-the-median-absolute-deviation-to-find-outliers/
+# https://stackoverflow.com/questions/22354094/pythonic-way-of-detecting-outliers-in-one-dimensional-observation-data
+# def doubleMADsfromMedian(y, thresh=5):
+#     '''Find and return the outliers of the pace_rate'''
+#     m = np.median(y)
+#     abs_dev = np.abs(y - m)
+#     left_mad = np.median(abs_dev[y <= m])
+#     right_mad = np.median(abs_dev[y >= m])
+#     y_mad = left_mad * np.ones(len(y))
+#     y_mad[y > m] = right_mad
+#     modified_z_score = 0.6745 * abs_dev / y_mad
+#     modified_z_score[y == m] = 0
+#     return modified_z_score > thresh
+
+
 
 def clean_data(df, year):
     '''Takes in a DataFrame, drops unnecessary columns, and applies seconds_converter. '''
@@ -177,15 +193,17 @@ def clean_data(df, year):
         df[col] = df[col].apply(seconds_converter)
 
     # create a new column pace_slope
-    df['pace_slope'] = df.apply(race_slope, axis=1)
-    df['pace_slope'] = df.apply(race_slope_alternative, axis=1)
-    df['pace_slope'].fillna(df['pace_slope'].mean(), inplace=True)
+    df['race_rate'] = df.apply(race_slope, axis=1)
+    df['race_rate'] = df.apply(race_slope_alternative, axis=1)
+    df['race_rate'].fillna(df['pace_slope'].mean(), inplace=True)
 
     # add weather data
     df = add_weather_data(df, year)
 
     # add population of home city
     #     df = add_population(df)
+    # outliers = doubleMADsfromMedian(df['race_rate'])
+    # df = df[~outliers]
 
     # make gender binary
     df = pd.get_dummies(df, columns=['Gender'])
@@ -195,8 +213,28 @@ def clean_data(df, year):
 
     # drop unnecessary columns
     df.drop(['Citizen', 'City', 'State', 'Country', '5K', '10K', '15K', '20K',
-             '25K', '30K', '35K', '40K', 'Pace', 'Half', 'finish_time'], axis=1, inplace=True)
+             '25K', '30K', '35K', '40K', 'Pace', 'Half'], axis=1, inplace=True)
     df.drop(list(df.filter(regex='Unnamed')), axis=1, inplace=True)
     df.drop(list(df.filter(regex='Proj')), axis=1, inplace=True)
 
     return df
+
+
+def merge_dataframes(dfA, dfB, legacy_runners):
+    '''Filter the dataframe on only the legacy runners and merge.
+    Then drop the all post years data, except the finish time.'''
+
+    # filter the dataframes
+    dfA_legacy = dfA[dfA['Name'].isin(legacy_runners)]
+    dfB_legacy = dfB[dfB['Name'].isin(legacy_runners)]
+
+    # merge dataframes on leagcy runner names
+    df_merge = dfA.merge(dfB, how='left', on='Name', suffixes=('_A', '_B'))
+    # verify merge by age and remove incorrect people with same name
+    df_merge = df_merge[df_merge['Age_A'] == df_merge['Age_B'] - 1]
+    # columns to drop
+    drop_cols = ['finish_time_A', 'Bib_B', 'Age_B', 'overall_rank_B', 'gender_rank_B',
+                 'division_rank_B', 'pace_slope_B', 'temp_B', 'humidity_B', 'wind_B',
+                 'Gender_F_B', 'Gender_M_B']
+    df_merge.drop(drop_cols, inplace=True, axis=1)
+    return df_merge
