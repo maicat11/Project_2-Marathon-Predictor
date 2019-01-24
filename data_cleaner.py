@@ -59,12 +59,12 @@ def race_slope(row):
 def race_slope_alternative(row):
     '''Create a new column of the race progression slope.'''
 
-    if np.isnan(row['race_rate']):
+    if np.isnan(row['pace_rate']):
         half_splits = ['Half', 'finish_time']
         x = np.array([21.1, 42.2])
         y = np.array([row['Half']] + list(np.diff(row[half_splits])))
         return best_fit_slope(x, y) / 4
-    return row['pace_slope']
+    return row['pace_rate']
 
 
 def add_weather_data(df, year):
@@ -193,16 +193,16 @@ def clean_data(df, year):
         df[col] = df[col].apply(seconds_converter)
 
     # create a new column pace_slope
-    df['race_rate'] = df.apply(race_slope, axis=1)
-    df['race_rate'] = df.apply(race_slope_alternative, axis=1)
-    df['race_rate'].fillna(df['pace_slope'].mean(), inplace=True)
+    df['pace_rate'] = df.apply(race_slope, axis=1)
+    df['pace_rate'] = df.apply(race_slope_alternative, axis=1)
+    df['pace_rate'].fillna(df['pace_rate'].mean(), inplace=True)
 
     # add weather data
     df = add_weather_data(df, year)
 
     # add population of home city
     #     df = add_population(df)
-    # outliers = doubleMADsfromMedian(df['race_rate'])
+    # outliers = doubleMADsfromMedian(df['pace_rate'])
     # df = df[~outliers]
 
     # make gender binary
@@ -234,7 +234,10 @@ def merge_dataframes(dfA, dfB, legacy_runners):
     df_merge = df_merge[df_merge['Age_A'] == df_merge['Age_B'] - 1]
     # columns to drop
     drop_cols = ['finish_time_A', 'Bib_B', 'Age_B', 'overall_rank_B', 'gender_rank_B',
-                 'division_rank_B', 'pace_slope_B', 'temp_B', 'humidity_B', 'wind_B',
+                 'division_rank_B', 'pace_rate_B', 'temp_B', 'humidity_B', 'wind_B',
                  'Gender_F_B', 'Gender_M_B']
     df_merge.drop(drop_cols, inplace=True, axis=1)
+    df_merge.columns = ['Bib', 'Name', 'Age', 'overall_rank', 'gender_rank',
+                          'division_rank', 'pace_rate', 'temp', 'humidity',
+                          'wind', 'Gender_F', 'Gender_M', 'finish_time']
     return df_merge
