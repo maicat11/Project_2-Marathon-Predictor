@@ -51,7 +51,7 @@ def plot_learning_curves(model, X_train, y_train, X_val, y_val):
     plt.yscale('log');
 
 
-def residuals_plot(predictions, residuals):
+def residuals_plot(predictions, residuals, X_val):
     sns.set(style="whitegrid")
     plt.figure(figsize=(15, 5))
     sns.scatterplot(x=list(predictions), y=list(residuals), legend='full',
