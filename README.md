@@ -80,7 +80,7 @@ The graph below displays the spread of finish times over the given bib numbers. 
 
 One other interesting observation is the variance in male versus female of finish times.  Men on average had a much larger variance of finish times compared to women.  Meaning women stay closer to their bib qualifying time than men do.  Something for exploration another time.
 
-![image-20190127141002752](/Users/maileivargas/Library/Application Support/typora-user-images/image-20190127141002752.png)
+![download-1](https://user-images.githubusercontent.com/20651507/51808709-5d519f80-224c-11e9-914a-c4c7541ce058.png)
 
 
 
