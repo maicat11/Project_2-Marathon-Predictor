@@ -23,4 +23,4 @@ Why would you want to predict a race time? Well, large companies such as Nike an
 Often the finishers finish within seconds of each other, so predicting race times with such precision will be a challenge.  I decided to attack this problem using 4 years (2015-2018) of Boston Marathon finishing times.   The data is narrowed down to "legacy runners" (repeat runners) fed into various models using linear regression and stochastic gradient descent.  Metrics of $R^2$ and $RMSE$ (Root Mean Squared Error) are used to measure the results.
 
 
-[Read more about the summery of this project here]()
+[Read more about the summary of this project here](https://github.com/maicat11/Project_2/blob/master/Documents/Project2_Summary.md)
