@@ -126,6 +126,7 @@ Below is a table of the results of each model:
 | SGDRegressor w/RIDGE regularization              | 0.31         | 2035.24     | 33.92              |
 
 
+
 Below is the results of Linear Regression actual Vs. predicted values.  Notice how most of the points fall within one standard deviation (red dashed lines) of the regression line (in blue). 
 
 ![download-7](https://user-images.githubusercontent.com/20651507/51809371-25028f00-2255-11e9-9a80-e68fc7e96800.png)
