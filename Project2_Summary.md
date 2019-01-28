@@ -80,13 +80,14 @@ The graph below displays the spread of finish times over the given bib numbers. 
 
 One other interesting observation is the variance in male versus female of finish times.  Men on average had a much larger variance of finish times compared to women.  Meaning women stay closer to their bib qualifying time than men do.  Something for exploration another time. 
 
-![image-20190127141002752](/Users/maileivargas/Library/Application Support/typora-user-images/image-20190127141002752.png)
 
+![download-1](https://user-images.githubusercontent.com/20651507/51808778-1021fd80-224d-11e9-8cb5-4713e3cfc663.png)
 
 
 The graph below displays the distribution of finish times of male versus female.  The distribution shape is the same for male/female and right skewed because mostly likely due to the charity runners or the older aged runners.  It is interesting to see large gap between the male and female for the faster runners, but as the time gets longer eventually the distribution evens out.  
 
-![image-20190127141047338](/Users/maileivargas/Library/Application Support/typora-user-images/image-20190127141047338.png)
+
+![download](https://user-images.githubusercontent.com/20651507/51808779-14e6b180-224d-11e9-8893-289130b6fa92.png)
 
 
 
@@ -120,11 +121,10 @@ In the process of viewing the results of each model a few things are worth point
 
 
 
-![download-6](/Users/maileivargas/Desktop/download-6.png)
+![download-6](https://user-images.githubusercontent.com/20651507/51808747-c46f5400-224c-11e9-9375-a8e6818abea7.png)
 
 
-
-![download-5](/Users/maileivargas/Desktop/download-5.png)
+![download-5](https://user-images.githubusercontent.com/20651507/51808753-cfc27f80-224c-11e9-8a85-4106ceb243ae.png)
 
 
 
