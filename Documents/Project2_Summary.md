@@ -103,6 +103,16 @@ As a benchmark, I first ran a simple linear regression model using all of the in
 
 ### Results
 
+In the process of viewing the results of each model a few things are worth pointing out in the graphs below.  The 2 graphs are representative of learning curves one which converges the other does not. Both graphs are for SGD and it is interesting to see the behavior when it behaves badly.  After scaling the data by using the ```StandardScaler()``` function in ```sklearn``` the learning curve behaved better and it convereged. 
+
+
+
+![download-6](https://user-images.githubusercontent.com/20651507/51808747-c46f5400-224c-11e9-9375-a8e6818abea7.png)
+
+
+![download-5](https://user-images.githubusercontent.com/20651507/51808753-cfc27f80-224c-11e9-8a85-4106ceb243ae.png)
+
+
 Below is a table of the results of each model:
 
 | **Model**                                        | $R^2$        | $RMSE$      | Minutes conversion |
@@ -116,15 +126,6 @@ Below is a table of the results of each model:
 | SGDRegressor w/RIDGE regularization              | 0.31         | 2035.24     | 33.92              |
 
 
-
-In the process of viewing the results of each model a few things are worth pointing out in the graphs below.  The 2 graphs are representative of learning curves one which converges the other does not. Both graphs are for SGD and it is interesting to see the behavior when it behaves badly.  After scaling the data by using the ```StandardScaler()``` function in ```sklearn``` the learning curve behaved better and it convereged. 
-
-
-
-![download-6](https://user-images.githubusercontent.com/20651507/51808747-c46f5400-224c-11e9-9375-a8e6818abea7.png)
-
-
-![download-5](https://user-images.githubusercontent.com/20651507/51808753-cfc27f80-224c-11e9-8a85-4106ceb243ae.png)
 
 
 
