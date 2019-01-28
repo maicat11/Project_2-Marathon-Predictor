@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d17459d-df6f-45c0-af9f-ed3ea0db2179" name="Default" comment="" />
+    <list default="true" id="7d17459d-df6f-45c0-af9f-ed3ea0db2179" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/Documents/Project2_Summary.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documents/project_presentation.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Documents/project_presentation.pdf" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,7 +15,7 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="scraper.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scraper.py">
+        <entry file="file://$PROJECT_DIR$/Scripts_Notebooks/scraper.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
               <caret line="3" selection-start-line="3" selection-end-line="3" />
@@ -24,7 +27,7 @@
         </entry>
       </file>
       <file leaf-file-name="data_cleaner.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_cleaner.py">
+        <entry file="file://$PROJECT_DIR$/Scripts_Notebooks/data_cleaner.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
               <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
@@ -36,7 +39,7 @@
         </entry>
       </file>
       <file leaf-file-name="diagnostics_plot.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/diagnostics_plot.py">
+        <entry file="file://$PROJECT_DIR$/Scripts_Notebooks/diagnostics_plot.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
               <caret line="19" selection-start-line="19" selection-end-line="19" />
@@ -45,7 +48,7 @@
         </entry>
       </file>
       <file leaf-file-name="modeling.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modeling.py">
+        <entry file="file://$PROJECT_DIR$/Scripts_Notebooks/modeling.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
               <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
@@ -59,13 +62,20 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="144" selection-start-line="144" selection-end-line="144" />
+            <state relative-caret-position="271">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <replaceStrings>
@@ -105,6 +115,11 @@
               <item name="Project_2" type="b2602c69:ProjectViewProjectNode" />
               <item name="Project_2" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Project_2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project_2" type="462c0819:PsiDirectoryNode" />
+              <item name="Documents" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -115,6 +130,12 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Scripts_Notebooks" />
+      <recent name="$PROJECT_DIR$/Documents" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -143,8 +164,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="29" y="23" width="1208" height="969" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.34476843" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34476843" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="R Packages" />
       <window_info anchor="right" id="R Graphics" />
@@ -153,7 +175,7 @@
       <window_info anchor="bottom" id="Version Control" weight="0.32979977" />
       <window_info anchor="bottom" id="Python Console" weight="0.32979977" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32979977" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32979977" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -195,7 +217,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scraper.py">
+    <entry file="file://$PROJECT_DIR$/Scripts_Notebooks/scraper.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
@@ -205,7 +227,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_cleaner.py">
+    <entry file="file://$PROJECT_DIR$/Scripts_Notebooks/data_cleaner.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
@@ -215,14 +237,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/diagnostics_plot.py">
+    <entry file="file://$PROJECT_DIR$/Scripts_Notebooks/diagnostics_plot.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modeling.py">
+    <entry file="file://$PROJECT_DIR$/Scripts_Notebooks/modeling.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
@@ -234,8 +256,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="144" selection-start-line="144" selection-end-line="144" />
+        <state relative-caret-position="271">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>
