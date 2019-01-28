@@ -120,11 +120,11 @@ In the process of viewing the results of each model a few things are worth point
 
 
 
-![download-6](/Users/maileivargas/Desktop/download-6.png)
+![download-6](https://user-images.githubusercontent.com/20651507/51808747-c46f5400-224c-11e9-9375-a8e6818abea7.png)
 
 
+![download-5](https://user-images.githubusercontent.com/20651507/51808753-cfc27f80-224c-11e9-8a85-4106ceb243ae.png)
 
-![download-5](/Users/maileivargas/Desktop/download-5.png)
 
 
 
