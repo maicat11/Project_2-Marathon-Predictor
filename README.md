@@ -86,7 +86,7 @@ One other interesting observation is the variance in male versus female of finis
 
 The graph below displays the distribution of finish times of male versus female.  The distribution shape is the same for male/female and right skewed because mostly likely due to the charity runners or the older aged runners.  It is interesting to see large gap between the male and female for the faster runners, but as the time gets longer eventually the distribution evens out.
 
-![image-20190127141047338](/Users/maileivargas/Library/Application Support/typora-user-images/image-20190127141047338.png)
+![download](https://user-images.githubusercontent.com/20651507/51808727-8d993e00-224c-11e9-985d-9ac9c760c03b.png)
 
 
 
