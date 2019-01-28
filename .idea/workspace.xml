@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d17459d-df6f-45c0-af9f-ed3ea0db2179" name="Default" comment="" />
+    <list default="true" id="7d17459d-df6f-45c0-af9f-ed3ea0db2179" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/Documents/project_presentation.pdf" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -162,7 +164,7 @@
   <component name="ToolWindowManager">
     <frame x="29" y="23" width="1208" height="969" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.34476843" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34476843" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="R Packages" />
       <window_info anchor="right" id="R Graphics" />
@@ -171,7 +173,7 @@
       <window_info anchor="bottom" id="Version Control" weight="0.32979977" />
       <window_info anchor="bottom" id="Python Console" weight="0.32979977" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32979977" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32979977" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
