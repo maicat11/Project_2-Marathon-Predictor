@@ -2,7 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d17459d-df6f-45c0-af9f-ed3ea0db2179" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/images/graphs/CorrelationHeatmap.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/graphs/RaceResultsDistribution.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/graphs/RaceResultsScatter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/graphs/Screen Shot 2019-01-25 at 10.38.58 AM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/graphs/download-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/graphs/download-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/graphs/download-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/graphs/download-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/graphs/download-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/graphs/download-6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/graphs/download-7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/graphs/download.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/BM_background.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/images/presentation/BM_background.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/BM_background2.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/images/presentation/BM_background2.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/BM_background3.gif" beforeDir="false" afterPath="$PROJECT_DIR$/images/presentation/BM_background3.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/BM_background4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/presentation/BM_background4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/BM_background5.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/presentation/BM_background5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/BM_background6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/presentation/BM_background6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/BM_background7.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/presentation/BM_background7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/BM_background8.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/presentation/BM_background8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/BM_background9.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/presentation/BM_background9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/BostonMarathonLogo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/presentation/BostonMarathonLogo.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/StochasticGradientDescent.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/presentation/StochasticGradientDescent.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/StochasticGradientDescent2.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/presentation/StochasticGradientDescent2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/python_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/presentation/python_logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/selenium_logo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/presentation/selenium_logo.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/wundergroundLogo_4c.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/presentation/wundergroundLogo_4c.jpg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -12,7 +39,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="scratch.py" pinned="false" current-in-tab="true">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -62,7 +95,16 @@
             <path>
               <item name="Project_2" type="b2602c69:ProjectViewProjectNode" />
               <item name="Project_2" type="462c0819:PsiDirectoryNode" />
-              <item name="Documents" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project_2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
+            <path>
+              <item name="Project_2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Scratches" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
             </path>
           </expand>
           <select />
@@ -73,7 +115,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -108,8 +150,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="29" y="23" width="1208" height="969" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.35077187" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.36878216" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="R Packages" order="3" />
       <window_info anchor="right" id="R Graphics" order="3" />
@@ -118,7 +161,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32979977" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32979977" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32979977" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32979977" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -194,6 +237,9 @@
           <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
