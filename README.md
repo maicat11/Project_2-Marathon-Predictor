@@ -1,6 +1,7 @@
-# Predicting Boston Marathon Finishing Times
+# Could you be the next Boston Marathon Winner?
+## Predicting Boston Marathon Finishing Times
 
-## Metis Project Luther - Regression
+### Metis Project Luther - Regression
 
 Mailei Vargas
 
