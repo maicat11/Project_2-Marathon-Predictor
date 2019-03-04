@@ -1,4 +1,4 @@
-# Could you be the next Boston Marathon Winner?
+# Hey Nike! Just do This...
 ## Predicting Boston Marathon Finishing Times
 
 ### Metis Project Luther - Regression
