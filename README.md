@@ -1,6 +1,7 @@
-# Predicting Boston Marathon Finishing Times
+# Hey Nike! Just do This...
+## Predicting Boston Marathon Finishing Times
 
-## Metis Project Luther - Regression
+### Metis Project Luther - Regression
 
 Mailei Vargas
 
