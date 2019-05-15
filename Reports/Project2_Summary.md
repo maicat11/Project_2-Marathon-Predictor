@@ -28,14 +28,14 @@ Often the finishers finish within seconds of each other, so predicting race time
 
 Below is a list of the libraries, sites, and tools that aided in the completion of this project. 
 
-| **Websites**                                                 | Tools            | **Libraries for Webscraping** | **Libraries for Analysis/Modeling** | **Custom functions scripts**                                 |
-| ------------------------------------------------------------ | ---------------- | ----------------------------- | ----------------------------------- | ------------------------------------------------------------ |
-| [Boston Marathon 2018 Finishers](http://registration.baa.org/2018/cf/Public/iframe_ResultsSearch.cfm?mode=entry) | Python           | Selenium                      | numpy                               | [scraper.py](https://github.com/maicat11/Project_2/blob/master/scraper.py) |
-| [Kaggle](https://www.kaggle.com/rojour/boston-results)       | Jupiter Notebook | Beautiful Soup                | pandas                              | [data_cleaner.py](https://github.com/maicat11/Project_2/blob/master/data_cleaner.py) |
-| [Weather Underground](https://www.wunderground.com/history/) | PyCharm          | time                          | matplotlib                          | [modeling.py](https://github.com/maicat11/Project_2/blob/master/modeling.py) |
-|                                                              | GitHub           |                               | seaborn                             |                                                              |
-|                                                              |                  |                               | statsmodels                         |                                                              |
-|                                                              |                  |                               | sklearn                             |                                                              |
+| **Websites**                                                 | Tools            | **Libraries for Analysis/Modeling** | **Custom functions scripts** |
+| ------------------------------------------------------------ | ---------------- | ----------------------------------- | ---------------------------- |
+| [Boston Marathon 2018 Finishers](http://registration.baa.org/2018/cf/Public/iframe_ResultsSearch.cfm?mode=entry) | Python           | numpy                               | visualize.py                 |
+| [Kaggle](https://www.kaggle.com/rojour/boston-results)       | Jupiter Notebook | pandas                              | modeling.py                  |
+| [Weather Underground](https://www.wunderground.com/history/) | PyCharm          | matplotlib                          |                              |
+|                                                              | GitHub           | seaborn                             |                              |
+|                                                              |                  | xgboost                             |                              |
+|                                                              |                  | catboost                            |                              |
 
 
 
